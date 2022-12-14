@@ -1,11 +1,11 @@
-@import "text";
+@import "colors";
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: 'raleway';
-    color: #333333;
+    color: $fontcolor;
 }
 
 /* index */
@@ -23,7 +23,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #B9FFFF;
+    background-color: $fondo;
 }
 
 .logo {
@@ -33,17 +33,20 @@ header {
 .navbar {
     list-style-type: none;
     font-size: 20px;
+    
 }
 
 .navbar__hlink {
     text-decoration: none;
-    color: #333333;
+    color: $fontcolor;
     padding: 5px 5px 5px 5px;
     margin-top: 1px;
+    
 }
 
 .navbar__seccion {
     display: inline;
+    
 }
 
 .navbar__hlink:hover {
@@ -65,7 +68,7 @@ main {
     height: 70vh;
     min-height: 100vh;
     position: relative;
-    background-color: #B9FFFF;
+    background-color:  $fondo;
 }
 
 main .textos_main_principal {
@@ -77,7 +80,7 @@ main .textos_main_principal {
     flex-direction: column;
     letter-spacing: 0.03em;
     line-height: 1.6;
-    background-color: #B9FFFF;
+    background-color:  $fondoF;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: unset;
@@ -87,14 +90,14 @@ main .textos_main_principal {
 
 main .boton_main_principal {
     text-decoration: none;
-    color: #333333;
+    color: $fontcolor;
     padding: 5px 5px 5px 5px;
     margin-top: 1px;
 }
 
 .boton_main_principal:hover {
-    background: #80e4e4;
-    border: 2px solid #80e4e4;
+    background: $fondohover;
+    border: 2px solid $fondohover;
     border-radius: 5px;
     animation: seleccion 2s infinite;
 
@@ -179,7 +182,7 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         display: flex;
-        background-color: #333333;
+        background-color: $fontcolor;
     }
 
     .contendor_footer_datos {
@@ -228,7 +231,7 @@ footer {
     flex-direction: column;
     letter-spacing: 0.03em;
     line-height: 1.6;
-    background-color: #B9FFFF;
+    background-color:  $fondo;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: unset;
@@ -254,7 +257,7 @@ footer {
 
     h1 {
         font-size: 45px;
-        color: rgb(4, 27, 46);
+        color: $hoverlinks;
         text-align: center;
     }
 
@@ -265,7 +268,7 @@ footer {
 
     h3 {
         font-size: 25px;
-        color: rgb(4, 27, 46);
+        color: $hoverlinks;
         text-align: center;
     }
 
@@ -276,7 +279,7 @@ footer {
     }
 
     h4:hover {
-        color: rgb(4, 27, 46);
+        color: $hoverlinks;
         text-shadow: 1px 1px 1px rgb(11, 88, 151);
         transition: translate(10px, 10px);
     }
@@ -452,7 +455,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     display: flex;
-    background-color: #B9FFFF
+    background-color:  $fondo
 }
 
 .productos_titulo {
@@ -466,8 +469,8 @@ footer {
 }
 
 .productos_titulo:hover {
-    background: #80e4e4;
-    border: 2px solid #80e4e4;
+    background: $fondohover;
+    border: 2px solid $fondohover;
     border-radius: 5px;
     animation: seleccion 2s infinite;
 
@@ -566,7 +569,7 @@ footer {
 
     h1 {
         font-size: 50px;
-        color: rgb(4, 27, 46);
+        color: $hoverlinks;
         text-shadow: 1px 1px 1px rgb(55, 73, 77);
         text-align: center;
     }
@@ -594,12 +597,12 @@ footer {
 
     a {
         font-size: 25px;
-        color: rgb(4, 27, 46);
+        color: $hoverlinks;
         text-decoration: none;
     }
 
     a:hover {
-        color: rgb(4, 27, 46);
+        color: $hoverlinks;
         text-shadow: 1px 1px 1px rgb(11, 88, 151);
         transition: translate(10px, 10px);
     }

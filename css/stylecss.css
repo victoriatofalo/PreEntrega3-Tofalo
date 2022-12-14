@@ -1,7 +1,3 @@
-.main_text {
-  font-family: 'raleway';
-  color: #333333; }
-
 * {
   margin: 0%;
   padding: 0%;
@@ -105,14 +101,12 @@ main .boton_main_principal {
     font-size: 12px; } }
 
 @media screen and (min-width: 475px) and (max-width: 1000px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; }
   .logo {
     width: 100px; }
   .navbar {
-    font-size: 20px; }
+    flex-direction: row;
+    gap: 30px;
+    font-size: 30px; }
   .textos_main_principal {
     font-size: 16px; } }
 
@@ -448,7 +442,7 @@ footer {
 
 @media (max-width: 474px) {
   .textos_mayoristas h1 {
-    font-size: 40px; }
+    font-size: 35px; }
   .mayoristas h2 {
     font-size: 20px; }
   .mayoristas a {
@@ -456,8 +450,8 @@ footer {
 
 @media screen and (min-width: 475px) and (max-width: 1000px) {
   .textos_mayoristas h1 {
-    font-size: 47px; }
+    font-size: 40px; }
   .mayoristas h2 {
-    font-size: 25px; }
+    font-size: 20px; }
   .mayoristas a {
-    font-size: 22px; } }
+    font-size: 20px; } }
