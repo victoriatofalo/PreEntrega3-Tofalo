@@ -101,12 +101,14 @@ main .boton_main_principal {
     font-size: 12px; } }
 
 @media screen and (min-width: 475px) and (max-width: 1000px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
   .logo {
     width: 100px; }
   .navbar {
-    flex-direction: row;
-    gap: 30px;
-    font-size: 30px; }
+    font-size: 20px; }
   .textos_main_principal {
     font-size: 16px; } }
 

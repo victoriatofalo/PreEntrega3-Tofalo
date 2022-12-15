@@ -80,7 +80,7 @@ main .textos_main_principal {
     flex-direction: column;
     letter-spacing: 0.03em;
     line-height: 1.6;
-    background-color:  $fondoF;
+    background-color:  $fondo;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: unset;
@@ -119,55 +119,51 @@ main .boton_main_principal {
 
 @media (max-width: 474px) {
     #grid_index {
-        grid-template-areas:
-            "header"
-            "principal principal principal"
-            "footer footer";
+      grid-template-areas:
+        "header"
+        "principal principal principal"
+        "footer footer";
     }
-
-    .logo {
-        width: 50px;
+  
+    .logo{
+      width: 50px;
     }
-
     .navbar {
-        flex-direction: row;
-        gap: 30px;
-        font-size: 10px;
+      flex-direction: row;
+      gap: 30px;
+      font-size: 10px; 
     }
-
-    .textos_main_principal {
-        font-size: 12px;
+    .textos_main_principal{
+      font-size: 12px;
     }
-}
-
-@media screen and (min-width: 475px) and (max-width:1000px) {
-
-
-    .logo {
-        width: 100px;
+  }
+  
+  @media screen and (min-width: 475px) and (max-width:1000px) {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
-
+    .logo{
+      width: 100px;
+    }
     .navbar {
-        flex-direction: row;
-        gap: 30px;
-        font-size: 30px;
+      font-size: 20px;
     }
-
-    .textos_main_principal {
-        font-size: 16px;
+    .textos_main_principal{
+      font-size: 16px;
     }
-}
-
-@media screen and (min-width: 1001px) {
-
-    .logo {
-        width: 125px;
+  }
+  @media screen and (min-width: 1001px){
+    
+    .logo{
+      width: 125px;
     }
-
-    .textos_main_principal {
-        font-size: 35px;
+  
+    .textos_main_principal{
+      font-size: 35px;
     }
-}
+  }
 
 footer {
     grid-area: footer;
